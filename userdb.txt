@@ -1,0 +1,11 @@
+CREATE DATABASE usuariosDB;
+
+USE usuariosDB;
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT UNIQUE PRIMARY KEY,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    senha VARCHAR(255) NOT NULL
+);
+
+SELECT * FROM usuarios;

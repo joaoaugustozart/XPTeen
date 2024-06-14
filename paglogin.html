@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XPTeen - Login</title>
+  <link rel="stylesheet" href="paglogin.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <img src="img/XPTeen.png" alt="Logo do aplicativo" class="logo">
+      <div class="topnav" id="myTopnav">
+        <a href="pagprinci.html">Página Inicial</a>
+        <a href="#Sobre">Sobre</a>
+        <a href="#Contato">Contato</a>
+        <a href="paglogin.html" class="ativo loginheader">Login</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="start-section">
+      <div class="start-container">
+        <h3>Faça Login ou crie uma nova conta</h3>
+        <button onclick="showLoginForm()">Login</button>
+        <button onclick="showRegisterForm()">Registrar</button>
+      </div>
+      <div id="login-form" class="form-container" style="display: none;">
+        <h3>Login</h3>
+        <form>
+          <label for="username">Usuário:</label>
+          <input type="text" id="username" name="username" required>
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" required>
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+      <div id="register-form" class="form-container" style="display: none;">
+        <h3>Registrar</h3>
+        <form>
+          <label for="new-username">Usuário:</label>
+          <input type="text" id="new-username" name="new-username" required>
+          <label for="new-password">Senha:</label>
+          <input type="password" id="new-password" name="new-password" required>
+          <button type="submit">Registrar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+  </footer>
+  <script src="paglogin.js"></script>
+</body>
+</html>
